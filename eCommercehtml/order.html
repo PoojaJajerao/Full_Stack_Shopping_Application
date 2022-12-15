@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Shopping</title>
+    <link rel="stylesheet" href="files/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <h1 class="topnav-left">Hello<span>  <span> !!! </h1>
+
+        <div class="topnav-right">
+            <h1><a href="logout.php" tite="Logout">Logout</a> </h1>
+        </div>
+    </div>
+    <div class="navbar">
+    <div class="menu">
+        <ul>
+            <li><a href="kids.html"> Kids</a></li>
+               
+            <div class="order"> <li><a href="order.html">Order</a></li></div>   
+    </div>
+    <table>
+        <tbody>
+       <tr>
+       <td>  <p>Your cart is empty</p> </td>
+       <td>  <a href="order.html" class="button">Place Order</a> </td>
+        </tr>
+        </tbody>
+    </table>
+
+<script>
+    function onChangeValue(count, itemno) {
+
+        if (count == 10) {
+            alert("Max Items Reached");
+        } else if (count == 0) {
+            alert("Min Items Reached");
+        }
+
+        $.ajax({
+            type: "GET",
+            url: "order.html",
+            data: "item=" + itemno + "&count=" + count,
+            success: function(result) {
+                $("#somewhere").html(result);
+            }
+        });
+
+    };
+    </script>
+</body>
+
+
+</html>

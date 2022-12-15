@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Shopping</title>
+    <link rel="stylesheet" href="files/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <h1 class="topnav-left">Hello!!! </h1>
+
+        <div class="topnav-right">
+            <h1><a href="logout.html" tite="Logout">Logout</a> </h1>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="menu">
+        <ul>
+            <li><a href="kids.html"> Kids</a></li>
+      
+            <div class="order"> <li><a href="order.html">Order</a></li></div>   
+</div>
+       
+        
+       
+    </div>
+  
+    <table>
+        <tbody>
+     
+            <tr>
+                <td>
+                <div class="card">   <img src="files/images/kid1.jpg" alt="winter1">
+                <div class="container"><h2>Name: T shirt</h2><h2>Price: $80</h2>
+                    <h5>Quantity</h5></h4> 
+                    <input type="number" onKeyDown="return false" name="winter1" id="winter1" max=10 min=0 value="<?php echo $_SESSION['products']['product1']['item1'] ?>" onchange="onChangeValue(this.value,'item1')">
+                    <a href="#" class="button">Add to cart</a>
+ 
+                </div>
+</div>
+            
+                </td>
+              
+</tr>
+
+<tr>
+                <td>
+                <div class="card">   <img src="files/images/kid2.jpg" alt="winter1">
+                <div class="container"><h2>Name: T shirt</h2><h2>Price: $60</h2>
+                    <h5>Quantity</h5></h4> 
+                    <input type="number" onKeyDown="return false" name="winter2" id="winter2" max=10 min=0 value="<?php echo $_SESSION['products']['product1']['item2'] ?>" onchange="onChangeValue(this.value,'item2')">
+                    <a href="#" class="button">Add to cart</a>
+ 
+                </div>
+</div>
+            
+                </td>
+              
+</tr>
+
+<tr>
+                <td>
+                <div class="card">   <img src="files/images/kid3.jpg" alt="winter1">
+                <div class="container"><h2>Name: T shirt</h2><h2>Price: $60</h2>
+                    <h5>Quantity</h5></h4> 
+                    <input type="number" onKeyDown="return false" name="winter2" id="winter2" max=10 min=0 value="<?php echo $_SESSION['products']['product1']['item3'] ?>" onchange="onChangeValue(this.value,'item3')">
+                    <a href="#" class="button">Add to cart</a>
+ 
+                </div>
+</div>
+            
+                </td>
+              
+</tr>
+
+<tr>
+                <td>
+                <div class="card">   <img src="files/images/kid4.jpg" alt="winter1">
+                <div class="container"><h2>Name: T shirt</h2><h2>Price: $60</h2>
+                    <h5>Quantity</h5></h4> 
+                    <input type="number" onKeyDown="return false" name="winter2" id="winter2" max=10 min=0 value="<?php echo $_SESSION['products']['product1']['item4'] ?>" onchange="onChangeValue(this.value,'item4')">
+                    <a href="#" class="button">Add to cart</a>
+ 
+                </div>
+</div>
+            
+                </td>
+              
+</tr>
+
+<tr>
+                <td>
+                <div class="card">   <img src="files/images/kid5.jpg" alt="winter1">
+                <div class="container"><h2>Name: T shirt</h2><h2>Price: $60</h2>
+                    <h5>Quantity</h5></h4> 
+                    <input type="number" onKeyDown="return false" name="winter2" id="winter2" max=10 min=0 value="<?php echo $_SESSION['products']['product1']['item5'] ?>" onchange="onChangeValue(this.value,'item5')">
+                    <a href="#" class="button">Add to cart</a>
+ 
+                </div>
+</div>
+            
+                </td>
+              
+</tr>
+                          
+        </tbody>
+    </table>
+
+
+</body>
+
+
+</html>
